@@ -7,6 +7,6 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"colors": "0.0.1"
+		"dt-utils-js": "0.0.1"
 	}
 }
