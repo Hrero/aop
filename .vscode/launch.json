@@ -3,6 +3,48 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "nest的route的实现",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/nest的route的实现",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "angular的控制反转",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/angular的控制反转",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "元数据的使用",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/元数据的使用",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
             "name": "launch运行ts文件配置",
             "program": "${workspaceFolder}/launch运行ts文件配置/index.ts",
             "request": "launch",

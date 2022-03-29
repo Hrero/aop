@@ -2,7 +2,7 @@
  * params 传入的装饰器的值
  * target 装饰器的实例
  * methodName 方法名称
- * descriptor 信息value和target是一回事
+ * descriptor 信息value和target是方法
  */
 function get(params: any) {
     console.log(params, '====');
