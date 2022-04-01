@@ -1,9 +1,13 @@
 // 先进行一些装饰器的定义
 function logClass1(target: any) {
-    console.log('logClass1');
+    return function (target) {
+        console.log('logClass1');
+    };
 }
 function logClass2(target: any) {
-    console.log('logClass2');
+    return function (target) {
+        console.log('logClass2');
+    };
 }
 function logAttribute1(param?: any) {
     return function (target: any, attrName: string) {
@@ -44,8 +48,8 @@ function logParam2(param?: any) {
     };
 }
 
-@logClass1
-@logClass2
+@logClass1('s')
+@logClass2('1')
 class HttpClient {
     @logAttribute1()
     api1: string | undefined;
@@ -55,14 +59,14 @@ class HttpClient {
 
     constructor() {}
 
-    @logMethod1()
     get1() {}
 
-    @logMethod2()
     get2() {
         console.log('==');
     }
 
+    @logMethod1()
+    @logMethod2()
     get3(@logParam1() param1: string, @logParam2() param2: string) {
 
     }

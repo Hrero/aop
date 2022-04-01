@@ -3,6 +3,62 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "webpack的周期plugins原理实现",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/webpack的周期plugins原理实现",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "webpack的loader原理实现",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/webpack的loader原理实现",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "webpack打包编译原理实现",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/webpack打包编译原理实现",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "闭包缓存作用域实例",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/闭包缓存作用域实例",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
             "name": "nest的route的实现",
             "request": "launch",
             "skipFiles": [
