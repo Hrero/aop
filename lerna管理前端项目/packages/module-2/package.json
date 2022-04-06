@@ -1,6 +1,6 @@
 {
-  "name": "module-2",
-  "version": "0.0.0",
+  "name": "@hzrtest/module-2",
+  "version": "0.0.7",
   "description": "> TODO: description",
   "author": "haozengrun <haozengrun@duiba.com.cn>",
   "homepage": "https://github.com/Hrero/aop#readme",
@@ -13,6 +13,9 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hrero/aop.git"
@@ -22,5 +25,6 @@
   },
   "bugs": {
     "url": "https://github.com/Hrero/aop/issues"
-  }
+  },
+  "gitHead": "49b6dd6891671d988c677fcb3938c976bc1c2a9c"
 }

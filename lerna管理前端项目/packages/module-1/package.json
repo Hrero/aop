@@ -1,12 +1,20 @@
 {
-	"name": "module-1",
-	"version": "1.0.0",
+	"name": "@hzrtest/module-1",
+	"version": "0.0.8",
 	"description": "",
 	"main": "index.js",
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"git": "git add . && git commit -m '-' && git push origin master"
+	},
 	"dependencies": {
+		"@hzrtest/module-2": "^0.0.7",
 		"dt-utils-js": "0.0.1"
-	}
+	},
+	"gitHead": "49b6dd6891671d988c677fcb3938c976bc1c2a9c"
 }

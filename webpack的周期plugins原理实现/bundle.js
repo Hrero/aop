@@ -89,29 +89,29 @@ const emitFile = file => {
         ${modules}
       })`
 }
-const Compiler = require('./compiler')
-new Compiler({
-    entry: './src/index.js',
-    output: 'dist/bundle.js',
-    // module: {
-    //     rules: [
-    //         {
-    //             test: /index/g,
-    //             use: ['./loader']
-    //         }
-    //     ]
-    // },
-    plugins: [
-        new HtmlPlugin({
-          template: 'index.html',   //用到的模板文件
-          filename: 'newIndex.html'       //生成的html文件命名
-        })
-    ]
-}).run()
-// const content = emitFile('./src/index.js')
+// const Compiler = require('./compiler')
+// new Compiler({
+//     entry: './src/index.js',
+//     output: 'dist/bundle.js',
+//     // module: {
+//     //     rules: [
+//     //         {
+//     //             test: /index/g,
+//     //             use: ['./loader']
+//     //         }
+//     //     ]
+//     // },
+//     plugins: [
+//         new HtmlPlugin({
+//           template: 'index.html',   //用到的模板文件
+//           filename: 'newIndex.html'       //生成的html文件命名
+//         })
+//     ]
+// }).run()
+const content = emitFile('./src/index.js')
 // fs.mkdirSync('./dist')
 // fs.writeFileSync('./dist/bundle.js', content)
-// console.log(content);
+console.log(content);
 // parseModules('./src/index.js')
 
 
