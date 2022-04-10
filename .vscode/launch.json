@@ -3,6 +3,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "proxy的使用",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "program": "${workspaceFolder}/proxy的使用/defineProperty.js",
+            "type": "pwa-node"
+        },
+        {
             "name": "arg的理解使用",
             "request": "launch",
             "skipFiles": [
