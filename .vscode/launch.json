@@ -3,6 +3,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "arg的理解使用",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "program": "${workspaceFolder}/arg的理解使用/index.js",
+            "type": "pwa-node"
+        },
+        {
             "name": "webpack的周期plugins原理实现",
             "request": "launch",
             "skipFiles": [
