@@ -17,8 +17,10 @@ server.listen(port, hostname, () => {
 });
 
 function cacheSomeAttribute(port, hostname) {
+    let a = 1 // 这里的a是不会被释放的
     return function (nature) {
+        a++
+        console.log(a);
         return `${hostname}:${port}/${nature}`
     }
 }
-
