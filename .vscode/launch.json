@@ -1,0 +1,173 @@
+// https://www.jianshu.com/p/d3c6e25ae815
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "proxy的使用",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "program": "${workspaceFolder}/proxy的使用/defineProperty.js",
+            "type": "pwa-node"
+        },
+        {
+            "name": "arg的理解使用",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "program": "${workspaceFolder}/arg的理解使用/index.js",
+            "type": "pwa-node"
+        },
+        {
+            "name": "webpack的周期plugins原理实现",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/webpack的周期plugins原理实现",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "webpack的loader原理实现",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/webpack的loader原理实现",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "webpack打包编译原理实现",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/webpack打包编译原理实现",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "闭包缓存作用域实例",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/闭包缓存作用域实例",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "nest的route的实现",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/nest的route的实现",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "angular的控制反转",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/angular的控制反转",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "元数据的使用",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/元数据的使用",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "launch运行ts文件配置",
+            "program": "${workspaceFolder}/launch运行ts文件配置/index.ts",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/launch运行ts文件配置",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "装饰器的使用",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceRoot}/装饰器的使用",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "td"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            // type指定编程环境
+            "type": "pwa-node",
+            // request指定调试模式，vscode只有两种调试模式，launch和attach
+            // attach请求类型为附加
+            // launch请求类型为启动
+            "request": "launch",
+            // name给配置项起一个名字。launch.json是一个configurations，里面可以有很多个配置，这里的name就是配置的名字
+            "name": "launch使用",
+            // 指定跳过单步调试的代码
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeArgs": [],
+            "program": "${workspaceFolder}/launch配置文件的作用/index.js"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@hzrtest/module-2",
+  "version": "0.0.7",
+  "description": "> TODO: description",
+  "author": "haozengrun <haozengrun@duiba.com.cn>",
+  "homepage": "https://github.com/Hrero/aop#readme",
+  "license": "ISC",
+  "main": "lib/module-2.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hrero/aop.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Hrero/aop/issues"
+  },
+  "gitHead": "49b6dd6891671d988c677fcb3938c976bc1c2a9c"
+}
