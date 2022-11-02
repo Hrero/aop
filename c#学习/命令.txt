@@ -1,0 +1,22 @@
+# 建立新的解决方案
+# dotnet new sln -o drow
+
+# 建立新的项目
+# dotnet new console -o drow
+
+# 打包项目
+# dotnet build
+
+# 运行项目相当于编译项目每次debug前运行
+# dotnet run --project drow
+
+# 下载core环境
+# Fn + F5 + .Net Core
+
+# 配置debug
+# 配置launch 然后 Fn + F5 debug运行
+
+# 直接运行 进入到bin的dll目录下
+# dotnet drow.dll
+
+
