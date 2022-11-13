@@ -1,17 +1,8 @@
 const http = require('http');
 const one = require('./1.js');
-const one2 = require('./1.js');
-// const one = new one1()
-// const one2 = new one1()
-one.do1()
-one.do1()
-one.do1()
-one2.do1()
-one2.do1()
-one2.do1()
-// 结论取的是单例的new
-
-
+const four = require('./4.js');
+one.do2()
+four()
 const server = http.createServer((req, res) => {
   res.end();
 });

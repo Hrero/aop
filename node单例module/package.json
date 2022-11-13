@@ -1,0 +1,14 @@
+{
+  "name": "npm-link-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app",
+    "dev1": "node app",
+    "pm": "NODE_ENV=production pm2 start app.js -n timerserver",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
