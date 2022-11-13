@@ -1,4 +1,9 @@
 const http = require('http');
+const one = require('./1.js')
+
+one.do()
+
+
 
 const server = http.createServer((req, res) => {
   res.end();
@@ -7,9 +12,10 @@ server.on('clientError', (err, socket) => {
   socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
 });
 server.listen(8000);
+console.log(1);
 process.on('SIGTERM', close.bind(this, 'SIGTERM'));
 process.on('SIGINT', close.bind(this, 'SIGINT'));
-process.on('SIGKILL', close.bind(this, 'SIGKILL'));
+// process.on('SIGKILL', close.bind(this, 'SIGKILL'));
 
 function close(signal) {
     console.log(`收到 ${signal} 信号开始处理`);
@@ -19,6 +25,7 @@ function close(signal) {
         process.exit(0);
     });
 }
+
 // process.on("SIGTERM", () => {
 //     console.log(1);
 //     process.exit(1)
