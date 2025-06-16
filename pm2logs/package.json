@@ -1,0 +1,20 @@
+{
+  "name": "npm-link-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app",
+    "dev1": "node app",
+    "pt": "sh start.sh",
+    "pm": "NODE_ENV=production pm2 start 1.js -n timerserver --merge-logs -o /Users/didi/aop/pm2logs/logs/out.log -e /Users/didi/aop/pm2logs/logs/err.log",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@didi/nodex-logger": "^3.1.1",
+    "log4js": "^6.9.1",
+    "xml2js": "^0.6.0"
+  }
+}

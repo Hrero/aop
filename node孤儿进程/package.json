@@ -1,0 +1,21 @@
+{
+  "name": "npm-link-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev1": "nodemon app",
+    "dev": "node --inspect app",
+    "pm": "NODE_ENV=production pm2 start app.js -n timerserver",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "egg": "^2.33.1",
+    "node-cron": "^3.0.0",
+    "node-schedule": "^2.1.0",
+    "shelljs": "^0.8.5"
+  }
+}

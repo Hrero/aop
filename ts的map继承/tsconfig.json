@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "lib": ["es6", "dom", "es7"],
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "typeRoots": [
+      "./node_modules/@types/",
+      "./src/transit/src/types/",
+      "./src/types/",
+      "./src/typings/",
+      "./src/transit/src/typings/"
+    ],
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": false,
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "declaration": true,
+    "declarationMap": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "downlevelIteration": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["./src/**/*", "src/enter.ts", "src/enter.ts"],
+  "exclude": ["./dist/**/*"]
+}

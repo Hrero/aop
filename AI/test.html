@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MCP测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #logger {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 10px;
+            height: 300px;
+            overflow-y: auto;
+            margin-top: 20px;
+            font-family: monospace;
+        }
+        button {
+            padding: 8px 15px;
+            margin-right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>MCP连接测试</h1>
+    <div>
+        <button id="init">初始化连接</button>
+        <button id="test">发送测试请求</button>
+        <button id="close">关闭连接</button>
+    </div>
+    <div id="logger"></div>
+
+    <script>
+        let sessionId = null;
+        let eventSource = null;
+        const logger = document.getElementById('logger');
+        
+        function log(message) {
+            const entry = document.createElement('div');
+            entry.textContent = `${new Date().toLocaleTimeString()}: ${message}`;
+            logger.appendChild(entry);
+            logger.scrollTop = logger.scrollHeight;
+        }
+
+        // 初始化连接
+        document.getElementById('init').addEventListener('click', async () => {
+            try {
+                log('正在初始化连接...');
+                const response = await fetch('http://localhost:3000/mcp', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json, text/event-stream'
+                    },
+                    body: JSON.stringify({
+                        jsonrpc: '2.0',
+                        method: 'initialize',
+                        params: {
+                            client: {
+                                name: 'web-test',
+                                version: '1.0.0'
+                            }
+                        },
+                        id: 1
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP错误: ${response.status}`);
+                }
+                
+                sessionId = response.headers.get('mcp-session-id');
+                log(`连接成功，会话ID: ${sessionId}`);
+                
+                // 建立SSE连接
+                if (eventSource) {
+                    eventSource.close();
+                }
+                
+                log(`尝试建立SSE连接，会话ID: ${sessionId}`);
+                eventSource = new EventSource(`http://localhost:3000/mcp?session-id=${sessionId}`);
+                
+                eventSource.onopen = () => {
+                    log('SSE连接已打开');
+                };
+                
+                eventSource.onmessage = (event) => {
+                    log(`接收到SSE消息: ${event.data}`);
+                };
+                
+                eventSource.onerror = (error) => {
+                    log(`SSE错误发生`);
+                    // 如果连接失败，关闭并重置EventSource
+                    eventSource.close();
+                    eventSource = null;
+                };
+            } catch (error) {
+                log(`初始化错误: ${error.message}`);
+            }
+        });
+        
+        // 发送测试请求
+        document.getElementById('test').addEventListener('click', async () => {
+            if (!sessionId) {
+                log('请先初始化连接');
+                return;
+            }
+            
+            try {
+                log('发送测试请求...');
+                const response = await fetch('http://localhost:3000/mcp', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json, text/event-stream',
+                        'mcp-session-id': sessionId
+                    },
+                    body: JSON.stringify({
+                        jsonrpc: '2.0',
+                        method: 'echo',
+                        params: {
+                            message: '这是一个测试消息'
+                        },
+                        id: 2
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP错误: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                log(`收到响应: ${JSON.stringify(data)}`);
+            } catch (error) {
+                log(`测试请求错误: ${error.message}`);
+            }
+        });
+        
+        // 关闭连接
+        document.getElementById('close').addEventListener('click', async () => {
+            if (!sessionId) {
+                log('没有活动的连接');
+                return;
+            }
+            
+            try {
+                log('关闭连接...');
+                if (eventSource) {
+                    eventSource.close();
+                    eventSource = null;
+                }
+                
+                const response = await fetch('http://localhost:3000/mcp', {
+                    method: 'DELETE',
+                    headers: {
+                        'mcp-session-id': sessionId
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP错误: ${response.status}`);
+                }
+                
+                log('连接已成功关闭');
+                sessionId = null;
+            } catch (error) {
+                log(`关闭连接错误: ${error.message}`);
+            }
+        });
+        
+        log('测试页面已加载，请点击"初始化连接"按钮开始测试');
+    </script>
+</body>
+</html>

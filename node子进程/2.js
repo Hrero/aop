@@ -1,21 +1,28 @@
-const four = require('./4')
+// const four = require('./4')
+var c = 0
+setInterval(data => {
+    console.log(++c);
+    }, 1000)
 process.on('message', data => {
+    // setInterval(data => {
+    //     console.log(++c);
+    //     }, 1000)
     // setTimeout(function(data) {
     //     // console.log(data.process, '==');
     //     process.send({status: 'success', type: 'from2'})
     // }, 2000)
-    four({process})
+    // four({process})
     // doSomeThing({process})
-    if (data.process) {
-        console.log(data.pool);
-        for (const iterator in data.pool) {
-            console.log(data.pool[iterator]);
-            if (data.pool[iterator] === data.process) {
-                console.log(22);
-            } else {
-                console.log(33);
-            }
-        }
+    // if (data.process) {
+    //     console.log(data.pool);
+    //     for (const iterator in data.pool) {
+    //         console.log(data.pool[iterator]);
+    //         if (data.pool[iterator] === data.process) {
+    //             console.log(22);
+    //         } else {
+    //             console.log(33);
+    //         }
+    //     }
         // for (let index = 0; index < data.pool.length; index++) {
         //     const element = data.pool[index];
         //     console.log(element, data.process, 'data');
@@ -31,7 +38,7 @@ process.on('message', data => {
         //         console.log(21);
         //     }
         // }
-    }
+    // }
     // process.exit()
     // process.send('success')
 })

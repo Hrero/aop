@@ -1,0 +1,15 @@
+{
+    "mcpServers": {
+        "thinking": {
+            "command": "npx",
+            "args": [
+                "@modelcontextprotocol/server-sequential-thinking"
+            ]
+        },
+        "test": {
+            "url": "http://localhost:3000/mcp"
+        }
+    }
+}
+  
+  

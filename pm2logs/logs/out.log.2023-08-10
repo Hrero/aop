@@ -1,0 +1,128 @@
+[INFO][2023-08-10T16:16:44.375+0800][default:nofilename] _undef||traceid=||spanid=||pid=73669||msg=some msg
+[INFO][2023-08-10T16:16:44.378+0800][default:nofilename] _undef||traceid=||spanid=||pid=73669||0=1||1=2||2=3
+[INFO][2023-08-10T16:16:44.379+0800][default:nofilename] _undef||traceid=||spanid=||pid=73669||0=name1||1=name2||2={"name3":1}
+[INFO][2023-08-10T16:16:44.379+0800][default:nofilename] _undef||traceid=||spanid=||pid=73669||msg=name is nodex, age is 100, obj is {"hello":1}
+[INFO][2023-08-10T16:16:44.380+0800][default:nofilename] _undef||traceid=||spanid=||pid=73669||a=1||b=2||c=[3,4]||d={"e":5}
+[INFO][2023-08-10T16:16:44.380+0800][default:nofilename] _undef||traceid=||spanid=||pid=73669||msg=Error: my name is error
+    at Object.<anonymous> (/Users/didi/aop/pm2logs/1.js:8:13)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Object.<anonymous> (/Users/didi/.nvm/versions/node/v16.18.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+[INFO][2023-08-10T16:16:47.544+0800][default:nofilename] _undef||traceid=||spanid=||pid=73684||msg=some msg
+[INFO][2023-08-10T16:16:47.546+0800][default:nofilename] _undef||traceid=||spanid=||pid=73684||0=1||1=2||2=3
+[INFO][2023-08-10T16:16:47.547+0800][default:nofilename] _undef||traceid=||spanid=||pid=73684||0=name1||1=name2||2={"name3":1}
+[INFO][2023-08-10T16:16:47.548+0800][default:nofilename] _undef||traceid=||spanid=||pid=73684||msg=name is nodex, age is 100, obj is {"hello":1}
+[INFO][2023-08-10T16:16:47.549+0800][default:nofilename] _undef||traceid=||spanid=||pid=73684||a=1||b=2||c=[3,4]||d={"e":5}
+[INFO][2023-08-10T16:16:47.549+0800][default:nofilename] _undef||traceid=||spanid=||pid=73684||msg=Error: my name is error
+    at Object.<anonymous> (/Users/didi/aop/pm2logs/1.js:8:13)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Object.<anonymous> (/Users/didi/.nvm/versions/node/v16.18.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+[INFO][2023-08-10T16:16:50.928+0800][default:nofilename] _undef||traceid=||spanid=||pid=73689||msg=some msg
+[INFO][2023-08-10T16:16:50.934+0800][default:nofilename] _undef||traceid=||spanid=||pid=73689||0=1||1=2||2=3
+[INFO][2023-08-10T16:16:50.939+0800][default:nofilename] _undef||traceid=||spanid=||pid=73689||0=name1||1=name2||2={"name3":1}
+[INFO][2023-08-10T16:16:50.939+0800][default:nofilename] _undef||traceid=||spanid=||pid=73689||msg=name is nodex, age is 100, obj is {"hello":1}
+[INFO][2023-08-10T16:16:50.940+0800][default:nofilename] _undef||traceid=||spanid=||pid=73689||a=1||b=2||c=[3,4]||d={"e":5}
+[INFO][2023-08-10T16:16:50.942+0800][default:nofilename] _undef||traceid=||spanid=||pid=73689||msg=Error: my name is error
+    at Object.<anonymous> (/Users/didi/aop/pm2logs/1.js:8:13)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Object.<anonymous> (/Users/didi/.nvm/versions/node/v16.18.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+[INFO][2023-08-10T16:16:54.113+0800][default:nofilename] _undef||traceid=||spanid=||pid=73709||msg=some msg
+[INFO][2023-08-10T16:16:54.116+0800][default:nofilename] _undef||traceid=||spanid=||pid=73709||0=1||1=2||2=3
+[INFO][2023-08-10T16:16:54.118+0800][default:nofilename] _undef||traceid=||spanid=||pid=73709||0=name1||1=name2||2={"name3":1}
+[INFO][2023-08-10T16:16:54.119+0800][default:nofilename] _undef||traceid=||spanid=||pid=73709||msg=name is nodex, age is 100, obj is {"hello":1}
+[INFO][2023-08-10T16:16:54.119+0800][default:nofilename] _undef||traceid=||spanid=||pid=73709||a=1||b=2||c=[3,4]||d={"e":5}
+[INFO][2023-08-10T16:16:54.120+0800][default:nofilename] _undef||traceid=||spanid=||pid=73709||msg=Error: my name is error
+    at Object.<anonymous> (/Users/didi/aop/pm2logs/1.js:8:13)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Object.<anonymous> (/Users/didi/.nvm/versions/node/v16.18.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+[INFO][2023-08-10T16:16:57.411+0800][default:nofilename] _undef||traceid=||spanid=||pid=73723||msg=some msg
+[INFO][2023-08-10T16:16:57.414+0800][default:nofilename] _undef||traceid=||spanid=||pid=73723||0=1||1=2||2=3
+[INFO][2023-08-10T16:16:57.415+0800][default:nofilename] _undef||traceid=||spanid=||pid=73723||0=name1||1=name2||2={"name3":1}
+[INFO][2023-08-10T16:16:57.416+0800][default:nofilename] _undef||traceid=||spanid=||pid=73723||msg=name is nodex, age is 100, obj is {"hello":1}
+[INFO][2023-08-10T16:16:57.417+0800][default:nofilename] _undef||traceid=||spanid=||pid=73723||a=1||b=2||c=[3,4]||d={"e":5}
+[INFO][2023-08-10T16:16:57.418+0800][default:nofilename] _undef||traceid=||spanid=||pid=73723||msg=Error: my name is error
+    at Object.<anonymous> (/Users/didi/aop/pm2logs/1.js:8:13)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Object.<anonymous> (/Users/didi/.nvm/versions/node/v16.18.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+[INFO][2023-08-10T16:17:00.761+0800][default:nofilename] _undef||traceid=||spanid=||pid=73730||msg=some msg
+[INFO][2023-08-10T16:17:00.764+0800][default:nofilename] _undef||traceid=||spanid=||pid=73730||0=1||1=2||2=3
+[INFO][2023-08-10T16:17:00.765+0800][default:nofilename] _undef||traceid=||spanid=||pid=73730||0=name1||1=name2||2={"name3":1}
+[INFO][2023-08-10T16:17:00.766+0800][default:nofilename] _undef||traceid=||spanid=||pid=73730||msg=name is nodex, age is 100, obj is {"hello":1}
+[INFO][2023-08-10T16:17:00.767+0800][default:nofilename] _undef||traceid=||spanid=||pid=73730||a=1||b=2||c=[3,4]||d={"e":5}
+[INFO][2023-08-10T16:17:00.768+0800][default:nofilename] _undef||traceid=||spanid=||pid=73730||msg=Error: my name is error
+    at Object.<anonymous> (/Users/didi/aop/pm2logs/1.js:8:13)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Object.<anonymous> (/Users/didi/.nvm/versions/node/v16.18.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+[INFO][2023-08-10T16:17:04.055+0800][default:nofilename] _undef||traceid=||spanid=||pid=73744||msg=some msg
+[INFO][2023-08-10T16:17:04.057+0800][default:nofilename] _undef||traceid=||spanid=||pid=73744||0=1||1=2||2=3
+[INFO][2023-08-10T16:17:04.058+0800][default:nofilename] _undef||traceid=||spanid=||pid=73744||0=name1||1=name2||2={"name3":1}
+[INFO][2023-08-10T16:17:04.059+0800][default:nofilename] _undef||traceid=||spanid=||pid=73744||msg=name is nodex, age is 100, obj is {"hello":1}
+[INFO][2023-08-10T16:17:04.060+0800][default:nofilename] _undef||traceid=||spanid=||pid=73744||a=1||b=2||c=[3,4]||d={"e":5}
+[INFO][2023-08-10T16:17:04.060+0800][default:nofilename] _undef||traceid=||spanid=||pid=73744||msg=Error: my name is error
+    at Object.<anonymous> (/Users/didi/aop/pm2logs/1.js:8:13)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Object.<anonymous> (/Users/didi/.nvm/versions/node/v16.18.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+[INFO][2023-08-10T16:17:07.317+0800][default:nofilename] _undef||traceid=||spanid=||pid=73758||msg=some msg
+[INFO][2023-08-10T16:17:07.320+0800][default:nofilename] _undef||traceid=||spanid=||pid=73758||0=1||1=2||2=3
+[INFO][2023-08-10T16:17:07.321+0800][default:nofilename] _undef||traceid=||spanid=||pid=73758||0=name1||1=name2||2={"name3":1}
+[INFO][2023-08-10T16:17:07.321+0800][default:nofilename] _undef||traceid=||spanid=||pid=73758||msg=name is nodex, age is 100, obj is {"hello":1}
+[INFO][2023-08-10T16:17:07.322+0800][default:nofilename] _undef||traceid=||spanid=||pid=73758||a=1||b=2||c=[3,4]||d={"e":5}
+[INFO][2023-08-10T16:17:07.323+0800][default:nofilename] _undef||traceid=||spanid=||pid=73758||msg=Error: my name is error
+    at Object.<anonymous> (/Users/didi/aop/pm2logs/1.js:8:13)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Object.<anonymous> (/Users/didi/.nvm/versions/node/v16.18.1/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)

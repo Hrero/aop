@@ -14,9 +14,12 @@ class one{
     }
     do2() {
         const work = child_precess.fork('./2.js')
-        const work2 = child_precess.fork('./3.js')
+        work.once("exit", (code, signal) => {
+            console.log('退出');
+          });
+        // const work2 = child_precess.fork('./3.js')
         this.pool.work = work
-        this.pool.work2 = work2
+        // this.pool.work2 = work2
         // for (const iterator in this.pool) {
         //     console.log(this.pool[iterator]);
         //     if (this.pool[iterator] === work) {
@@ -42,9 +45,13 @@ class one{
         //     }
         // })
         // this.do3(work, work2)
+
     }
     getProgress(name) {
         return this.pool[name]
+    }
+    getPools() {
+        return this.pool
     }
     do3(work, work2) {
         for (const iterator of this.pool.keys()) {
